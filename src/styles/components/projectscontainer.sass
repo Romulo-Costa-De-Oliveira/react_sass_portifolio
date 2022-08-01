@@ -1,0 +1,109 @@
+@use "../variables"
+@use '../mixins'
+    
+#projects-content
+    background-color: variables.$bg-color
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+    min-width: 337px
+    max-height: 130vh
+    
+
+    .projects-container
+        display: flex
+        flex-direction: column
+        height: 100%
+        width: 100%
+        
+
+        h2
+            color: variables.$text-color
+            font-size: 2.2rem
+            margin-bottom: 1.3rem
+            @include mixins.center
+            justify-content: start
+            gap: 1rem
+
+            &:after
+                @include mixins.gradient-border
+            
+
+        .projects-grid
+            display: box
+            overflow: hidden
+            gap: 1.5rem
+            height: 100%
+            overflow: auto
+            overflow-x: hidden
+    
+            &::-webkit-scrollbar
+                width: 2px
+                
+                
+                
+
+            &::-webkit-scrollbar-thumb 
+                
+                height: 20px
+                background: #363795
+
+            .project-card
+                display: flex
+                flex-direction: column
+                @include mixins.center
+                gap: 1rem
+                padding: 1rem
+                background-color: #222222
+                width: 100%
+                border-radius: variables.$card-border-radius 
+                margin-bottom: 1rem
+
+                h3
+                    color: variables.$text-color
+                    margin-bottom: 1rem
+
+                p
+                    color: #a6a6a6
+                    margin-bottom: 1rem
+                    line-height: 1.3rem
+
+                svg
+                    font-size: 2rem
+
+                .tech-info-view
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-between
+                    width: 100%
+                    
+                    .tech
+
+                    .view-btn
+                        align-self: start
+                        @include mixins.btn
+
+        #html
+            svg
+                color: #E44D26
+
+        #css
+            svg
+                color: #1572B6
+
+        #js
+            svg
+                color: #F0DB4F
+
+        DiNodejsSmall
+            svg
+                color: #83CD29
+
+        #mysql
+            svg
+                color: #00618A
+
+        #react
+            svg
+                color: #61DAFB

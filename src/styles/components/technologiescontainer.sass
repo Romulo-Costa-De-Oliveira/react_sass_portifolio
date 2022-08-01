@@ -7,13 +7,16 @@
     .technologies-grid
         display: flex
         flex-wrap: wrap
+        align-content: center
         gap: 1.5rem
+        @include mixins.center
 
     .technology-card
         @include mixins.center
         gap: 1rem
         padding: 1rem
         border: 1px solid #333
+        min-width: 180px
         width: 45%
         border-radius: variables.$card-border-radius 
 
