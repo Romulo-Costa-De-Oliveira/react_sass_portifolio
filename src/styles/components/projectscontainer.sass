@@ -5,14 +5,16 @@
     background-color: variables.$bg-color
     flex: 2 1 0
     border-radius: variables.$container-border-radius
-    padding: 3rem
-    min-width: 337px
+    padding: 3rem 2rem
+    min-width: 300px
     max-height: 130vh
+
     
 
     .projects-container
         display: flex
         flex-direction: column
+        padding: 1rem
         height: 100%
         width: 100%
         
@@ -30,18 +32,14 @@
             
 
         .projects-grid
-            display: box
             overflow: hidden
             gap: 1.5rem
-            height: 100%
+            height: 95%
             overflow: auto
             overflow-x: hidden
     
             &::-webkit-scrollbar
-                width: 2px
-                
-                
-                
+                width: 2px          
 
             &::-webkit-scrollbar-thumb 
                 
@@ -59,6 +57,19 @@
                 border-radius: variables.$card-border-radius 
                 margin-bottom: 1rem
 
+                .project-info
+                    width: 100%
+                    margin-bottom: .8rem
+                    border-bottom: 1px solid #444
+
+                .project-status
+                    width: 100%
+                    margin-bottom: .8rem
+                    border-bottom: 1px solid #444
+                
+                small
+                    color: #a6a6a6
+                    line-height: 1.3rem
                 h3
                     color: variables.$text-color
                     margin-bottom: 1rem
@@ -67,41 +78,31 @@
                     color: #a6a6a6
                     margin-bottom: 1rem
                     line-height: 1.3rem
+                    border-bottom: 1px solid #444
 
                 svg
-                    font-size: 2rem
+                    font-size: 3rem
 
                 .tech-info-view
                     display: flex
+                    flex-wrap: wrap
                     flex-direction: row
                     align-items: center
+                    padding: 0 0.5rem
                     justify-content: space-between
                     width: 100%
 
-                    .view-btn
+                    .tech
+                        display: flex
+                        flex-wrap: wrap
+                        flex-direction: row
+
+                    a
                         align-self: start
                         @include mixins.btn
+                        .view-btn
+                    :hover
+                        background: variables.$gradient-hover
+                        color: variables.$text-color
 
-        #html
-            svg
-                color: #E44D26
-
-        #css
-            svg
-                color: #1572B6
-
-        #js
-            svg
-                color: #F0DB4F
-
-        DiNodejsSmall
-            svg
-                color: #83CD29
-
-        #mysql
-            svg
-                color: #00618A
-
-        #react
-            svg
-                color: #61DAFB
+        
