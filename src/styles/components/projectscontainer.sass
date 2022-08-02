@@ -97,12 +97,11 @@
                         flex-wrap: wrap
                         flex-direction: row
 
-                    a
+                    .view-btn
                         align-self: start
                         @include mixins.btn
-                        .view-btn
-                    :hover
-                        background: variables.$gradient-hover
-                        color: variables.$text-color
+                        &:hover
+                            background: variables.$gradient-hover
+                            color: variables.$text-color
 
         
