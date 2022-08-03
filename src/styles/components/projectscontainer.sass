@@ -9,6 +9,13 @@
     min-width: 300px
     max-height: 130vh
 
+    .btn-plus
+        margin-top: 2rem
+        align-self: start
+        @include mixins.btn
+        &:hover
+            background: variables.$gradient-hover
+            color: variables.$text-color
     
 
     .projects-container
@@ -34,7 +41,6 @@
         .projects-grid
             overflow: hidden
             gap: 1.5rem
-            height: 95%
             overflow: auto
             overflow-x: hidden
     
@@ -55,7 +61,10 @@
                 background-color: #222222
                 width: 100%
                 border-radius: variables.$card-border-radius 
-                margin-bottom: 1rem
+                margin-bottom: 2rem
+                &:last-child
+                    margin-bottom: 0rem
+                
 
                 .project-info
                     width: 100%
@@ -96,6 +105,7 @@
                         display: flex
                         flex-wrap: wrap
                         flex-direction: row
+                        
 
                     .view-btn
                         align-self: start

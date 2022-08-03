@@ -10,7 +10,7 @@ const socialNetworks = [
   },
   {
     name: "github",
-    href: "https://github.com/Romulo-Costa-De-Oliveira",
+    href: "https://github.com/Romulo-Costa-De-Oliveira?tab=repositories",
     icon: <FaGithub />,
   },
   {

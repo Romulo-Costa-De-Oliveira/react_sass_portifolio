@@ -5,10 +5,8 @@ const ProjectsRedirection = () => {
     <section className="projects-container">
       <h2>Projetos</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore at
-        rem fugit provident dolorum exercitationem, ducimus quisquam ratione
-        cumque reiciendis accusamus totam, veniam iusto numquam distinctio.
-        Dignissimos labore aspernatur pariatur?
+        Clique no botão abaixo para visualizar uma lista de projetos pessoais,
+        desenvolvidos com algumas das tecnologias mais usadas do mercado.
       </p>
       <Link to="/projects" className="btn">
         Ver Projetos

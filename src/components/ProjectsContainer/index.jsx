@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectList from "../../utils/projectsAndIcons";
+import { AiOutlinePlus } from "react-icons/ai";
 import "../../styles/components/projectscontainer.sass";
 
 const projects = ProjectList;
@@ -19,9 +20,9 @@ const ProjectsContainer = () => {
               </div>
 
               <div className="tech-info-view">
-                <div className="tech" key="tech">
+                <div className="tech">
                   {project.techicons.map((tech) => (
-                    <div className="techicon" key={tech.id}>
+                    <div className="techicon" id={tech.id} key={tech.id}>
                       {tech}
                     </div>
                   ))}
@@ -33,6 +34,12 @@ const ProjectsContainer = () => {
             </div>
           ))}
         </div>
+        <a
+          className="btn-plus"
+          href="https://github.com/Romulo-Costa-De-Oliveira?tab=repositories"
+        >
+          <AiOutlinePlus />
+        </a>
       </section>
     </div>
   );

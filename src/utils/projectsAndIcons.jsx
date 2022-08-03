@@ -29,7 +29,7 @@ const ProjectList = [
     id: "dsmeta",
     name: "DsMeta",
     type: "Link",
-    link: "https://github.com/Romulo-Costa-De-Oliveira/dsmeta",
+    link: "https://dsmeta-rco.netlify.app",
     techicons: [i[9], i[5], i[4], i[6], i[8], i[0]],
     descripition:
       "Sistema desenvolvido com Java(Spring Boot) no back-end, com disparo de mensagens via Twilio e front-end desenvolvido em React.",
@@ -58,12 +58,22 @@ const ProjectList = [
   {
     id: "dsmovie",
     name: "DsMovie",
-    link: "https://github.com/Romulo-Costa-De-Oliveira/dsmovie",
+    link: "https://rcodsmovie.netlify.app",
     type: "Link",
     techicons: [i[9], i[5], i[4], i[6], i[8], i[0]],
     descripition:
       "Site para avaliação de filmes desenvolvido em React.js e API em Java(Spring Boot) com cadastro de avaliações em banco de dados.",
     status: "Completo",
+  },
+  {
+    id: "cannisfood",
+    name: "CannisFood",
+    link: "https://github.com/Romulo-Costa-De-Oliveira/Cannis-Food",
+    type: "Code",
+    techicons: [i[9], i[2], i[4], i[6], i[1], i[7]],
+    descripition:
+      "E-commerce para venda de alimentos para pets, com cadastro de lojas parceiras e acompanhamento por meio do Google Maps.",
+    status: "Finalizando gateway de pagamento...",
   },
 ];
 export default ProjectList;
