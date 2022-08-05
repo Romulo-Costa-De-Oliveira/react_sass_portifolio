@@ -14,7 +14,7 @@ const SideBar = () => {
       <InformationContainer />
       <a
         className="btn"
-        href="https://drive.google.com/file/d/113kww1W4j4-1DrVpMnN3Fn7p_kGKP-Cw/view?usp=sharing"
+        href="https://drive.google.com/file/d/1cJatD1GF4T_ZWj2XzoByCHXmRBhJUI05/view?usp=sharing"
       >
         Download Currículo
       </a>
